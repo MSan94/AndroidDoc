@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">AndroidDoc</string>
+
+    <!-- 로그인 Activity  -->
+    <string name="login_Error_Id">아이디를 올바르게 입력해주세요.</string>
+    <string name="login_Error_Pw">패스워드를 올바르게 입력해주세요.</string>
+    <string name="login_Error_Match">존재하지 않는 계정입니다.</string>
+    <string name="login_Success_User">로그인에 성공하였습니다.</string>
+    <string name="login_Success_Guest">게스트 계정으로 입장합니다.</string>
+</resources>
