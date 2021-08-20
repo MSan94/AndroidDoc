@@ -1,5 +1,6 @@
 package com.prj.androiddoc.presenter
 
+import android.util.Log
 import com.prj.androiddoc.contract.LoginContract
 
 class LoginPresenter : LoginContract.Presenter {
@@ -7,6 +8,10 @@ class LoginPresenter : LoginContract.Presenter {
     private var view : LoginContract.View? = null
     override fun setView(view: LoginContract.View) {
         this.view = view
+    }
+
+    override fun checkMatch(id: String, pw: String) : Boolean {
+        return id == "test" && pw == "qwer"
     }
 
     override fun start() {

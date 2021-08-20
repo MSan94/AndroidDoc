@@ -12,6 +12,7 @@ interface LoginContract {
 
     interface Presenter : BasePresenter{
         fun setView(view : View)
+        fun checkMatch(id:String,pw:String) : Boolean
     }
 
 }
