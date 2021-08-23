@@ -7,4 +7,12 @@
     <string name="btn_Guest">게스트 입장</string>
     <string name="id">아이디</string>
     <string name="pw">비밀번호</string>
+
+    <!-- 강의 -->
+    <string name="lectTitle">Android 학습하기</string>
+    <string name="lect1">Activity</string>
+    <string name="lect2">Spinner</string>
+    <string name="lect3">RecyclerView</string>
+    <string name="lect4">Fragment</string>
+    <string name="lect5">View</string>
 </resources>

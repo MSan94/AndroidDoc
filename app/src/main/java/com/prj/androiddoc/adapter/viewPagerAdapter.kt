@@ -2,10 +2,11 @@ package com.prj.androiddoc.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.fragment.app.FragmentActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.prj.androiddoc.databinding.ItemViewpagerBinding
 
-class viewPagerAdapter : RecyclerView.Adapter<viewPagerAdapter.Holder>() {
+class viewPagerAdapter(fragmentActivity: FragmentActivity) : RecyclerView.Adapter<viewPagerAdapter.Holder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Holder {
         val binding = ItemViewpagerBinding.inflate(LayoutInflater.from(parent.context),parent,false)
         return Holder(binding)
