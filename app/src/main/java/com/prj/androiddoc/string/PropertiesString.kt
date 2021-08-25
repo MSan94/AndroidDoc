@@ -1,5 +1,9 @@
 package com.prj.androiddoc.string
 
+/**
+ * @author 안명성
+ * @since 2021.08.24
+ */
 class PropertiesString {
     var login_Error_Id : String = "아이디를 올바르게 입력해주세요."
     var login_Error_Pw : String = "패스워드를 올바르게 입력해주세요."

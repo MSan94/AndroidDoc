@@ -5,7 +5,10 @@ import android.view.ViewGroup
 import androidx.fragment.app.FragmentActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.prj.androiddoc.databinding.ItemViewpagerBinding
-
+/**
+ * @author 안명성
+ * @since 2021.08.25
+ */
 class viewPagerAdapter(fragmentActivity: FragmentActivity) : RecyclerView.Adapter<viewPagerAdapter.Holder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Holder {
         val binding = ItemViewpagerBinding.inflate(LayoutInflater.from(parent.context),parent,false)

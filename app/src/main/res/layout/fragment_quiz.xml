@@ -1,6 +1,126 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linear_Top"
+        app:layout_constraintDimensionRatio="5:1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/scroll_Bottom"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <TextView
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="퀴즈 풀기"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <ScrollView
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linear_Top"
+        android:id="@+id/scroll_Bottom"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_Chap1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:background="@drawable/custom_button_cir"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/btn_Chap2"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_Chap2"
+                android:layout_margin="30dp"
+                app:layout_constraintStart_toEndOf="@+id/btn_Chap1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:background="@drawable/custom_button_cir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_Chap3"
+                android:layout_margin="30dp"
+                app:layout_constraintTop_toBottomOf="@+id/btn_Chap1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/btn_Chap4"
+                android:background="@drawable/custom_button_cir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_Chap4"
+                android:layout_margin="30dp"
+                app:layout_constraintTop_toBottomOf="@+id/btn_Chap2"
+                app:layout_constraintStart_toEndOf="@+id/btn_Chap3"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:background="@drawable/custom_button_cir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_Chap5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:background="@drawable/custom_button_cir"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_Chap3"
+                app:layout_constraintEnd_toStartOf="@+id/btn_Chap6"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_Chap6"
+                android:layout_margin="30dp"
+                app:layout_constraintStart_toEndOf="@+id/btn_Chap5"
+                app:layout_constraintTop_toBottomOf="@+id/btn_Chap4"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:background="@drawable/custom_button_cir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_Chap7"
+                android:layout_margin="30dp"
+                app:layout_constraintTop_toBottomOf="@+id/btn_Chap5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/btn_Chap8"
+                android:background="@drawable/custom_button_cir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_Chap8"
+                android:layout_margin="30dp"
+                app:layout_constraintTop_toBottomOf="@+id/btn_Chap6"
+                app:layout_constraintStart_toEndOf="@+id/btn_Chap7"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:background="@drawable/custom_button_cir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
