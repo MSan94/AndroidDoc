@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() , MainContract.View {
 
     val binding by lazy { ActivityMainBinding.inflate(layoutInflater) }
     val fragmentList = listOf(HomeFragment(), QuizFragment(), CummFragment(), MyFragment())
-    val tabTitles = listOf("홈","퀴즈","커뮤니티","마이페이지")
+    val tabTitles = listOf("홈","퀴즈","커뮤니티","내정보")
     lateinit var adapter : FragmentAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {

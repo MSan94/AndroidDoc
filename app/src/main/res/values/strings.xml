@@ -1,6 +1,11 @@
 <resources>
     <string name="app_name">AndroidDoc</string>
 
+    <!-- 공통 -->
+    <string name="id_">아이디 : </string>
+    <string name="score_">스코어 : </string>
+    <string name="logout">로그아웃</string>
+
     <!-- 로그인 Activity  -->
     <string name="btn_Join">간편가입</string>
     <string name="btn_Login">로그인</string>
@@ -15,4 +20,10 @@
     <string name="lect3">RecyclerView</string>
     <string name="lect4">Fragment</string>
     <string name="lect5">View</string>
+
+    <!-- 마이페이지 -->
+    <string name="step">나의 공부단계</string>
+    <string name="quiz_Status">퀴즈 현황</string>
+    <string name="sav_List">문제 저장 리스트</string>
+    <string name="my_Write">나의 글</string>
 </resources>
