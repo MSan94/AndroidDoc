@@ -5,6 +5,7 @@
     <string name="id_">아이디 : </string>
     <string name="score_">스코어 : </string>
     <string name="logout">로그아웃</string>
+    <string name="rank">랭킹</string>
 
     <!-- 로그인 Activity  -->
     <string name="btn_Join">간편가입</string>
