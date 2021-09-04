@@ -22,7 +22,7 @@ import com.prj.androiddoc.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment() {
 
-    val binding by lazy { FragmentHomeBinding.inflate(layoutInflater) }
+    private val binding by lazy { FragmentHomeBinding.inflate(layoutInflater) }
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
 
         binding.btnLect1.setOnClickListener { setLect(1) }
